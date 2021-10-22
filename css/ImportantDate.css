@@ -54,6 +54,33 @@ body {
     font-family: 'Microsoft Sans Serif';
     color: #577489;
 }
+.DatesTable {
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+.EventCalendar {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.datePicker {
+    margin-top: 10px;
+}
+
+    .datePicker input {
+        border-radius: 10px;
+    }
+
+
+
+.FRTitle {
+    text-align: center;
+    font-size: 35px;
+}
+
 
 nav {
     position: relative;
@@ -96,3 +123,30 @@ nav {
     margin-top: 350px;
     float: right;
 }
+
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size: 11px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+
+table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
+    }
