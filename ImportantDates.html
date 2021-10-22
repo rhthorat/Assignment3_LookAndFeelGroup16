@@ -10,6 +10,7 @@
 
 </head>
 
+
 <body>
     <nav>
         <a href="index.html">Home</a>
@@ -23,7 +24,7 @@
         <div class="clr"></div>
         <header class="headerAndInfo">
             <div class="headerStyle">
-                <div class="ActualTitle">SomeHeaderTitle</div>
+                <div class="ActualTitle">US Election Insights</div>
             </div>
 
             <div class="AboutWeb">
@@ -31,11 +32,101 @@
                 For more information visit <a href="https://www.fec.gov/"> Click here</a>.
             </div>
         </header>
+        </div>
+       
+    <h2 class="FRTitle">Important Events </h2>
+        <div class="EventCalendar">
+            <form asp-controller="Home" asp-action="GetDates" method="post">
+                <label for="Event">Select a date to see the events:<br /></label>
+                <div class="datePicker">
+                    <input type="date" id="Event" name="Event">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
 
-        <div>
+        <div class="DatesTable">
+            <table class="gridtable">
+                <tr>
+                    <th>Result Event ID</th>
+                    <th>Result Location</th>
+                    <th>Summary</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Category</th>
+                    <th>Result URL</th>
+                </tr>
+                <tr>
+                    <td>6664</td>
+                    <td>Ohio</td>
+                    <td>Special Post-General Report Due</td>
+                    <td>The Commission will host a two-day virtual campaign finance conference for candidates, party committees, and corporate/labor/trade PACs on November</td>
+                    <td>02-05-21</td>
+                    <td>08-11-21</td>
+                    <td>Conferences</td>
+                    <td><a href="https://www.fec.gov/help-candidates-and-committees/trainings/2021_virtual_conference/">Link</a></td>
+                </tr>
+                <tr>
+                    <td>6669</td>
+                    <td>Florida</td>
+                    <td>
+                        FL 20 Special General Election
+                    </td>
+                    <td>
+                        Special Post-General Report for OH/15 due
+                    </td>
+                    <td>11-01-22</td>
+                    <td>12-06-22</td>
+                    <td>Pre and Post Elections</td>
+                    <td><a href="https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2021-reporting-dates/special-election-report-notice-oh15/">Link</a></td>
+                </tr>
+                <tr>
+                    <td>6674</td>
+                    <td>Florida</td>
+                    <td>
+                        FL 20 Special Post-General Report Due
+                    </td>
+                    <td>
+                        The Commission will host a webinar for Nonconnected PACs.
+                    </td>
+                    <td>10-02-22</td>
+                    <td>12-12-22</td>
+                    <td>
+                        Roundtables
+                    </td>
+                    <td><a href="https://www.fec.gov/updates/fec-to-host-december-8-webinar-for-nonconnected-pacs-2021/">Link</a></td>
+                </tr>
+                <tr>
+                    <td>6675</td>
+                    <td>Florida</td>
+                    <td>FL 20 Special Pre-General Report Due</td>
+                    <td>Closed Commission meeting for consideration of enforcement matters and other items required to be kept confidential</td>
+                    <td>11-12-21</td>
+                    <td>06-11-22</td>
+                    <td>Executive Sessions</td>
+                    <td><a href="https://www.fec.gov/updates/december-14-2021-executive-session/">Link</a></td>
+                </tr>
+
+
+                <tr>
+                    <td>6725</td>
+                    <td>Online via Zoom</td>
+                    <td>FEC Virtual Conference</td>
+                    <td>
+                        Year-End Report due for ALL filers
+                    </td>
+                    <td>06-11-21</td>
+                    <td>07-12-22</td>
+                    <td>Reporting Deadlines</td>
+                    <td><a href="https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/">Link</a></td>
+                </tr>
+
+
+            </table>
 
         </div>
-    </div>
+    
     <div class="Contact">
         <ul class="followUS">
             <li>
