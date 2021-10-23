@@ -4,8 +4,8 @@ body {
     padding: 0px;
     background-image: url("ElectionBackgroundCopy1.jpg");
     background-size: cover;
-    height: 100%;
-    backdrop-filter: blur(15px);
+    height: 150%;
+    backdrop-filter: blur(20px);
     font-family: 'Microsoft Sans Serif';
 }
 
@@ -46,14 +46,19 @@ body {
     padding-top: 15px;
     font-family: 'Microsoft Sans Serif';
 }
+    .ActualTitle img {
+        max-width:50px;
+        max-height:50px;
+        border-radius:100%;
+    }
 
-.AboutWeb {
-    margin-top: 25px;
-    text-align: center;
-    font-size: 10px;
-    font-family: 'Microsoft Sans Serif';
-    color: #577489;
-}
+    .AboutWeb {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 10px;
+        font-family: 'Microsoft Sans Serif';
+        color: #577489;
+    }
 
 nav {
     position: relative;
@@ -211,4 +216,10 @@ td {
     margin-top:70px;
     text-align: center;
     font-size: 35px;
+}
+
+.Info a {
+    color: blue;
+    font-size: 20px;
+    background-color: white;
 }

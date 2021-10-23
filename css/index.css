@@ -46,6 +46,11 @@ body {
     padding-top: 15px;
     font-family: 'Microsoft Sans Serif';
 }
+    .ActualTitle img {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 100%;
+    }
 
 .AboutWeb {
     margin-top: 25px;
