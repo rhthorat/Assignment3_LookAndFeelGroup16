@@ -5,7 +5,7 @@ body {
     background-image: url("ElectionBackgroundCopy1.jpg");
     background-size: cover;
     height: 100%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(15px);
     font-family: 'Microsoft Sans Serif';
 }
 
@@ -13,7 +13,7 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    outline:0px;
+    outline: 0px;
     clear: both;
 }
 
@@ -23,26 +23,30 @@ body {
     border: 0px;
     outline: 0px;
 }
+
 .headerAndInfo {
     margin: 0px;
     padding: 0px;
-    height: 100px;
+    height: 125px;
     background-color: whitesmoke;
     font-family: 'Microsoft Sans Serif';
 }
+
 .headerStyle {
     margin: 0px;
     font-family: 'Microsoft Sans Serif';
     text-align: center;
     left: 100px;
-    font-size: 35px;
+    font-size: 50px;
     color: #00098b;
     font-family: 'Microsoft Sans Serif';
 }
+
 .ActualTitle {
     padding-top: 15px;
     font-family: 'Microsoft Sans Serif';
 }
+
 .AboutWeb {
     margin-top: 25px;
     text-align: center;
@@ -50,6 +54,7 @@ body {
     font-family: 'Microsoft Sans Serif';
     color: #577489;
 }
+
 nav {
     position: relative;
     width: 100%;
@@ -106,32 +111,40 @@ nav {
     padding: 5px;
     color: white;
     font-weight: bold;
-    font-size: 30px;
     text-align: center;
     font-family: 'Microsoft Sans Serif';
 }
 
+    .flex-item h4 {
+        font-size:25px;
+    }
+    .flex-item li, p {
+        font-size: 18px;
+    }
+
 
 .followUS li {
-    float: left;
+    float: right;
     width: 80px;
     list-style-type: none;
     font-family: 'Microsoft Sans Serif';
 }
 
 .followUS .signUp {
+    float: right;
     width: 200px;
     font-family: 'Microsoft Sans Serif';
 }
 
 .aboutUsTable {
-    float:left;
+    float: right;
     margin-top: 50px;
     margin-left: 5px;
     margin-bottom: 25px;
     width: 1000px;
     font-family: 'Microsoft Sans Serif';
 }
+
 thead {
     color: crimson;
     text-align: left;
@@ -139,15 +152,18 @@ thead {
     font-size: 26px;
     font-family: 'Microsoft Sans Serif';
 }
+
 td {
     max-width: 200px;
     word-wrap: break-word;
     font-family: 'Microsoft Sans Serif';
 }
+
 .IndividualInfo {
     color: antiquewhite;
     font-family: 'Microsoft Sans Serif';
 }
+
 .Info {
     max-width: 90%;
     color: white;
@@ -156,30 +172,43 @@ td {
 }
 
 .Contact {
-    margin-top: 350px;
     float: right;
 }
 
 #PageContent {
-    max-width:1500px;
-}
-#PageContent p {
-    margin-left: 15px;
-    text-align: left;
-    max-width: 90%;
-    color: ghostwhite;
-    font-size: 20px;
-    word-wrap: break-word;
-    font-family: 'Microsoft Sans Serif';
+    max-width: 1631px;
 }
 
-#PageContent h4 {
-    padding: 76px 0 14px 0;
+    #PageContent p {
+        margin-left: 15px;
+        text-align: left;
+        max-width: 90%;
+        color: ghostwhite;
+        font-size: 18px;
+        word-wrap: break-word;
+        font-family: 'Microsoft Sans Serif';
+    }
+
+    #PageContent h4 {
+        padding: 20px 0 14px 0;
+    }
+
+#DataModelSection {
+    float: left;
+    margin: 15px;
 }
 
-#DataModelSection h3 {
-    padding: 5px;
-    margin:30px 5px 5px 10px;
+    #DataModelSection h3 {
+        padding: 5px;
+        margin: 30px 5px 5px 10px;
+    }
+
+.DMImageAndOurImg::after {
+    float: left;
 }
 
-
+.FRTitle {
+    margin-top:70px;
+    text-align: center;
+    font-size: 35px;
+}

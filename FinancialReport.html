@@ -7,16 +7,18 @@
     <link rel='stylesheet' href='css/FinancialReport.css'>
 
     <title>US Election Insights</title>
+    <link rel="shortcut icon" type="image/jpg" href="Favicon.jpg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script type="text/javascript" src="js/FinancialReports.js"></script>
 
 </head>
-
 <body>
     <nav>
         <a href="index.html">Home</a>
         <a href="CandOrCommittee.html">Candidate</a>
         <a href="Committee.html">Committee</a>
         <a href="FinancialReport.html">Financial Report</a>
-        <a href="filing.html">Filings</a>
+        <a href="filing.html">Committee Filings</a>
         <a href="aboutus.html">About Us</a>
     </nav>
     <div class="wrapper">
@@ -24,7 +26,7 @@
         <div class="clr"></div>
         <header class="headerAndInfo">
             <div class="headerStyle">
-                <div class="ActualTitle">SomeHeaderTitle</div>
+                <div class="ActualTitle">US Election Insights</div>
             </div>
 
             <div class="AboutWeb">
@@ -32,11 +34,72 @@
                 For more information visit <a href="https://www.fec.gov/"> Click here</a>.
             </div>
         </header>
-
+    </div>
+    <div>
+        <h2 class="FRTitle">Financial Report of committees</h2>
         <div>
-
+            <form class="FinancialReport">
+                <h4>Insert Committee ID below. You can get that from the Candidate/Committe page </h4>
+                <div>
+                    <input type="text" name="committeID" placeholder="Committee" />
+                    <input type="submit" value="Get Financial Report" />
+                </div>
+            </form>
+            <table border="1" class="ReportTable">
+                <tr>
+                    <th>Committee Name</th>
+                    <th>State</th>
+                    <th>Cycle</th>
+                    <th>Cash at the Beginning</th>
+                    <th>Net Contribution</th>
+                    <th>Total Loan</th>
+                    <th>Net Operating Expenditure</th>
+                    <th>Disbursements</th>
+                    <th>Cash in Hand At End</th>
+                </tr>
+                <tr>
+                    <td>THE CONGRESSMAN JOE BARTON COMMITTEE</td>
+                    <td>TX</td>
+                    <td>2020</td>
+                    <td>421386.29</td>
+                    <td>394664.89</td>
+                    <td>0</td>
+                    <td>743811.82</td>
+                    <td>897847.9</td>
+                    <td>21655.46</td>
+                </tr>
+                <tr>
+                    <td>THE CONGRESSMAN JOE BARTON COMMITTEE</td>
+                    <td>TX</td>
+                    <td>2020</td>
+                    <td>421386.29</td>
+                    <td>394664.89</td>
+                    <td>0</td>
+                    <td>743811.82</td>
+                    <td>897847.9</td>
+                    <td>21655.46</td>
+                </tr>
+                <tr>
+                    <td>THE CONGRESSMAN JOE BARTON COMMITTEE</td>
+                    <td>TX</td>
+                    <td>2020</td>
+                    <td>421386.29</td>
+                    <td>394664.89</td>
+                    <td>0</td>
+                    <td>743811.82</td>
+                    <td>897847.9</td>
+                    <td>21655.46</td>
+                </tr>
+            </table>
+        </div>
+        <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+        <div class="graphDetails">
+            <h4>Committe Name: THE CONGRESSMAN JOE BARTON COMMITTEE</h4>
+            <h4>State: TX</h4>
+            <h4>Treasurer Name: BARTON, KRISTIN E</h4>
         </div>
     </div>
+
     <div class="Contact">
         <ul class="followUS">
             <li>

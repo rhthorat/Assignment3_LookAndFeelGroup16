@@ -1,4 +1,4 @@
-<!DOCTYPE = 'html'>
+<!DOCTYPE ='html'>
 <html>
 
 <head>
@@ -7,7 +7,7 @@
 	<link rel='stylesheet' href='css/aboutus.css'>
 
 	<title>US Election Insights</title>
-
+	<link rel="shortcut icon" type="image/jpg" href="Favicon.jpg" />
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 		<a href="CandOrCommittee.html">Candidate</a>
 		<a href="Committee.html">Committee</a>
 		<a href="FinancialReport.html">Financial Report</a>
-		<a href="filing.html">Filings</a>
+		<a href="filing.html">Committee Filings</a>
 		<a href="aboutus.html">About Us</a>
 	</nav>
 	<div class="wrapper">
@@ -24,23 +24,26 @@
 		<div class="clr"></div>
 		<header class="headerAndInfo">
 			<div class="headerStyle">
-				<div class= "ActualTitle">SomeHeaderTitle</div>
+				<div class="ActualTitle">US Election Insights</div>
 			</div>
 
 			<div class="AboutWeb">
-			This Website is created to provide information about the US elections. You can find information about candidates, committees and important dates related to elections.
-			For more information visit <a href="https://www.fec.gov/"> Click here</a>.</div>
+				This Website is created to provide information about the US elections. You can find information about candidates, committees and important dates related to elections.
+				For more information visit <a href="https://www.fec.gov/"> Click here</a>.
+			</div>
 		</header>
-		
+		<h2 class="FRTitle">About Us</h2>
 		<div class="PageAfterTitle">
 			<div id="PageContent" class='flex-container hbox'>
 				<div class='flex-item'>
 					<h4>Project Details</h4>
 					<p>
-						Demo Info. We have to change this. This section will have information about project
-						Web user interfaces are a common mechanism by which users interact with distributed information systems.
-						In this assignment, you will create a static version of a data-driven web site, using the common interface elements such as images, styles and html tags as well as simple interactivity using JavaScript.
-						Later in the course, you will gain familiarity with active technologies, which will generate these web pages based on data sources such as APIs and databases.
+						The US Elections Insight Project is an information source for the United States election system.  The mission of the project is to provide
+						election statistics, various committe's' Financial reports, and other useful information regarding the United States electoral system. By providing this information,
+						the project seeks to inform the people of the United States on what is the current status of their electoral system. We made use of html5, CSS3, JavaScript.
+						<br />
+						You can find information about candidates, committees and important dates related to elections.
+
 					</p>
 
 				</div>
@@ -48,25 +51,29 @@
 					<h4>API Details</h4>
 
 					<p>
-						Demo Info. We have to change this. This section will have information about how we implemented the project. api details, endpoints.
-						Web user interfaces are a common mechanism by which users interact with distributed information systems.
-						In this assignment, you will create a static version of a data-driven web site, using the common interface elements such as images, styles and html tags as well as simple interactivity using JavaScript.
-						Later in the course, you will gain familiarity with active technologies, which will generate these web pages based on data sources such as APIs and databases.
+						We are make use of <a href="https://api.open.fec.gov/developers/" style="color:cornflowerblue">open.fec.gov APIs</a>
+						to fetch data from following EndPoints <br /><br />
+						Candidate Details<br /> <a href="https://api.open.fec.gov/developers/#/candidate/get_candidate__candidate_id__">candidate/{candidate_id}/</a> <br />
+						Committee Details<br /> <a href="https://api.open.fec.gov/developers/#/committee/get_candidate__candidate_id__committees_">candidate/{candidate_id}/committees/</a> <br />
+						Financial Report<br /> <a href="https://api.open.fec.gov/developers/#/financial/get_committee__committee_id__totals_">/committee/{committee_id}/totals/</a> <br />
+						Event Calendar<br /> <a href="https://api.open.fec.gov/developers/#/dates/get_calendar_dates_">calendar-dates/</a> <br />
 					</p>
 				</div>
 
 				<div class='flex-item'>
 					<h4>Learnings</h4>
-					<p>
-						Demo Info. We have to change this. This section will have self reflection
-						Web user interfaces are a common mechanism by which users interact with distributed information systems.
-						In this assignment, you will create a static version of a data-driven web site, using the common interface elements such as images, styles and html tags as well as simple interactivity using JavaScript.
-						Later in the course, you will gain familiarity with active technologies, which will generate these web pages based on data sources such as APIs and databases.
-					</p>
+					<div>
+						<ul>
+							<li> We gained knowledge about HTML5, CSS3 and JavaScript</li>
+							<li>We implemented differents HTML components such as DatePicker, Forms, DropDowns, Image Sliders, etc </li>
+							<li>We also learnt Team Collaboration.</li>
+							<li>Gained insights on how a project is designed, coded, integrated and tested.</li>
+						</ul>
+					</div>
 				</div>
-				
+
 			</div>
-			<div>
+			<div class="DMImageAndOurImg">
 				<div id="DataModelSection" title="Data Model">
 					<h3>Data Model</h3>
 					<img src="datamodel.png" alt="DataModel" width=700 height=500>
@@ -95,20 +102,22 @@
 						</tr>
 					</tbody>
 				</table>
-				<div class="Contact">
-					<ul class="followUS">
-						<li>
-							<a href='https://twitter.com/fec' target='_blank'> <img src='t.png' width='32' height='32'> </a>
-						</li>
-						<li>
-							<a href='https://www.youtube.com/user/FECTube' target='_blank'><img src='y.png' width='32' height='32'></a>
-						</li>
-						<li class="signUp">
-							<a href='https://public.govdelivery.com/accounts/USFEC/subscriber/new?qsp=CODE_RED' target='_blank' style="color:beige">Sign Up for FECEmail</a>
-						</li>
 
-					</ul>
-				</div>
+			</div>
+			<div class="Contact">
+				<ul class="followUS">
+					<li class="signUp">
+						<a href='https://public.govdelivery.com/accounts/USFEC/subscriber/new?qsp=CODE_RED' target='_blank' style="color:beige">Sign Up for FECEmail</a>
+					</li>
+
+					<li>
+						<a href='https://www.youtube.com/user/FECTube' target='_blank'><img src='y.png' width='32' height='32'></a>
+					</li>
+					<li>
+						<a href='https://twitter.com/fec' target='_blank'> <img src='t.png' width='32' height='32'> </a>
+					</li>
+
+				</ul>
 			</div>
 		</div>
 	</div>

@@ -27,7 +27,7 @@ body {
 .headerAndInfo {
     margin: 0px;
     padding: 0px;
-    height: 100px;
+    height: 125px;
     background-color: whitesmoke;
     font-family: 'Microsoft Sans Serif';
 }
@@ -37,7 +37,7 @@ body {
     font-family: 'Microsoft Sans Serif';
     text-align: center;
     left: 100px;
-    font-size: 35px;
+    font-size: 50px;
     color: #00098b;
     font-family: 'Microsoft Sans Serif';
 }
@@ -93,10 +93,33 @@ nav {
 }
 
 .Contact {
-    margin-top: 350px;
+    //margin-top: 350px;
     float: right;
 }
 
-.tbl{
-    background-color:white;
+.tbl {
+    color: wheat;
+    max-width: 1500px;
+    width: 1500px;
+    margin: 0 0 60px 52px;
+}
+
+.ComForm {
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.ComForm input {
+    border-radius:15px;
+}
+
+    .ComForm select {
+        border-radius: 15px;
+    }
+
+.FRTitle {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 35px;
 }

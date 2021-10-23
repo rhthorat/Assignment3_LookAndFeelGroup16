@@ -39,11 +39,11 @@ window.onload = function () {
             },
             title: {
                 fontSize: 24,
-                fontColor:"white",
+                fontColor: "white",
                 display: true,
                 text: 'Financial Status Graph'
             },
-            
+
         }
     });
 }
