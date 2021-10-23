@@ -41,7 +41,7 @@ window.onload = function () {
                 fontSize: 24,
                 fontColor: "white",
                 display: true,
-                text: 'Financial Status Graph'
+                text: 'Financial Status Graph (amount in millions)'
             },
 
         }
